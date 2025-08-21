@@ -24,7 +24,8 @@ define root view entity ZI_JARAP_CERTIFPRODUCT
       CertIso,
       CertTuev,
       @Semantics.systemDateTime.localInstanceLastChangedAt: true
-      LocalLastChangedAt,
+      LocalLastChangedAt,      
+      'sap-icon://documents' as Icon,
 
       _Prod,
       _Stats

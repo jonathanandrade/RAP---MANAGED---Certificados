@@ -1,6 +1,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Consumption - Status dos Certificados'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 define view entity ZC_JARAP_CERTIFSTPRODUCT
   as projection on ZI_JARAP_CERTIFSTPRODUCT
 {
