@@ -21,22 +21,22 @@ CLASS zcl_ja_rap_carga_certificados IMPLEMENTATION.
     DELETE FROM zjarap_certif.
     DELETE FROM zjarap_certif_st.
 
-    DATA(lt_certif) = VALUE tt_certif(
-        ( cert_uuid = '1' matnr = '1')
-        ( cert_uuid = '2' matnr = '2')
-        ( cert_uuid = '3' matnr = '3')
-    ).
-
-    MODIFY zjarap_certif FROM TABLE @lt_certif.
-
-    DATA(lt_certif_st) = VALUE tt_certif_st(
-        ( state_uuid = '1' cert_uuid = '1' matnr = '1')
-        ( state_uuid = '2' cert_uuid = '1' matnr = '2')
-        ( state_uuid = '3' cert_uuid = '1' matnr = '3')
-        ( state_uuid = '4' cert_uuid = '2' matnr = '2')
-    ).
-
-    MODIFY zjarap_certif_st FROM TABLE @lt_certif_st.
+*    DATA(lt_certif) = VALUE tt_certif(
+*        ( cert_uuid = '1' matnr = '1')
+*        ( cert_uuid = '2' matnr = '2')
+*        ( cert_uuid = '3' matnr = '3')
+*    ).
+*
+*    MODIFY zjarap_certif FROM TABLE @lt_certif.
+*
+*    DATA(lt_certif_st) = VALUE tt_certif_st(
+*        ( state_uuid = '1' cert_uuid = '1' matnr = '1')
+*        ( state_uuid = '2' cert_uuid = '1' matnr = '2')
+*        ( state_uuid = '3' cert_uuid = '1' matnr = '3')
+*        ( state_uuid = '4' cert_uuid = '2' matnr = '2')
+*    ).
+*
+*    MODIFY zjarap_certif_st FROM TABLE @lt_certif_st.
 
     out->write( 'Certificados Inseridos com Sucesso.' ).
 
