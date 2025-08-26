@@ -47,7 +47,7 @@ annotate entity ZC_JARAP_CERTIFPRODUCT with
   ]
 
   @UI.selectionField: [{ position: 10 }]
-  @UI.lineItem: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10, cssDefault.width: '20em' }]
   @EndUserText.label: 'Certificado'
   CertUuid;
 
