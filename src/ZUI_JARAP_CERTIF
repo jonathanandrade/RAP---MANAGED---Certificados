@@ -1,0 +1,5 @@
+@EndUserText.label: 'UI - Certificados'
+define service ZUI_JARAP_CERTIF {
+  expose ZC_JARAP_CERTIFPRODUCT;
+  expose ZC_JARAP_CERTIFSTPRODUCT;
+}
